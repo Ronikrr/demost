@@ -18,7 +18,7 @@ const Header = () => {
     ]
 
     return (
-        <div className="">
+        <div className="instrument">
             <div className="fixed top-0 hidden lg:flex left-0 w-full h-auto bg-transparent z-[99] py-[35px] px-[3vw] after:absolute after:top-[20px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]  " >
 
                 <div className="container mx-auto ">

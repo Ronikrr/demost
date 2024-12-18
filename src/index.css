@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
 
 @layer utilities{
+  .instrument{
+     font-family: "Instrument Sans", serif;
+  }
   .circle{
     animation: rotatText 20s linear infinite;
   }
@@ -36,6 +43,8 @@ body {
    font-family: "Getaway", Sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: url("https://uithemez.com/i/artech/home6_modernAgency/assets/img/body_bg.png");
 }
 
 code {
