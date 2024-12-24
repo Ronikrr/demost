@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/logo/logo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
     const [isopenmenu, setisopenmenu] = useState(false);
     const location = useLocation()
+    const [scrolled, setScrolled] = useState(false);
+
+    // Track scroll position
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 700) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     const hantogglemenu = () => {
         setisopenmenu(!isopenmenu);
     }
@@ -20,29 +37,34 @@ const Header = () => {
 
     return (
         <div className="instrument">
-            <div className="fixed top-0 hidden lg:flex left-0 w-full h-auto bg-transparent z-[99] py-[35px] px-[3vw] after:absolute after:top-[20px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]  " >
-
-                <div className="container mx-auto ">
+            <div
+                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto  z-[99] py-[10px] px-[3vw] transition-all duration-300 ${scrolled ? 'bg-[#f6f6f6] py-[0px]' : 'bg-transparent  duration-1000   after:absolute after:top-[15px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]'}`}
+            >
+                <div className="w-full">
                     <div className="relative flex items-center justify-between z-[5]">
-                        <a className='inline-block me-[16px] py-[8px]' href="/">
-                            <img src={Logo} className='h-[30px]' alt="" />
+                        <a className="inline-block me-[16px] py-[8px]" href="/">
+                            <img src={Logo} className="h-[75px]" alt="Logo" />
                         </a>
                         <div className="items-center flex-grow hidden lg:flex">
-                            <ul className='flex flex-row ml-auto mr-[3rem]' >
+                            <ul className="flex flex-row ml-auto mr-[3rem]">
                                 {links.map((link, id) => {
-                                    const isActive = location.pathname === link.path
+                                    const isActive = location.pathname === link.path;
                                     return (
-                                        <li className='relative' key={id} >
-                                            <Link className={`text-[20px] capitalize   duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ${isActive ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]' : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'} `} to={link.path}>
+                                        <li className="relative" key={id}>
+                                            <Link
+                                                className={`text-[20px] capitalize duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ${isActive
+                                                    ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
+                                                    : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'
+                                                    }`}
+                                                to={link.path}
+                                            >
                                                 {link.labal}
                                             </Link>
                                         </li>
-                                    )
+                                    );
                                 })}
-
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
