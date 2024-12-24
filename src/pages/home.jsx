@@ -7,7 +7,6 @@ import Aboutsectoion from '../components/aboutsectoion'
 const Home = () => {
   return (
     <div>
-      <Header />
       <Banner />
       <Aboutsectoion />
       <Whychoose />

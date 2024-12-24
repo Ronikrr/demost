@@ -8,14 +8,13 @@ const Banner = () => {
   return (
       <section
           className="banner relative pt-[100px] lg:pt-[200px] min-h-screen bg-[url('https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png')] bg-cover bg-center ">
-          {/* <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/body_bg.png" className='absolute top-0 left-0 w-full h-full max-h-screen-2xl' alt="" /> */}
           <div className="absolute w-[15%] bottom-[-32px] left-[50px]">
               <img src={boy2} className='w-[70%]' alt="" />
           </div>
           <div className="absolute top-[190px] w-[20%]  left-[70px]">
               <img src={image_1} className='w-full' alt="" />
               <div className="text-[30px] w-[40%] absolute top-[100px] right-[76px]">
-                  kia kar <br /> rahe ho..
+                  kya kar <br /> rahe ho..
               </div>
           </div>
           <div className="absolute top-[105px] w-[35%]  right-[-50px] ">

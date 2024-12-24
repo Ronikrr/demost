@@ -8,7 +8,7 @@ const Header = () => {
         setisopenmenu(!isopenmenu);
     }
     const links = [
-        { id: 1, labal: "about us", path: "/aboutus" },
+        { id: 1, labal: "about us", path: "/aboutpage" },
         { id: 2, labal: "service", path: "/service" },
         { id: 3, labal: "our work", path: "/ourwork" },
         { id: 4, labal: "awards", path: "/awards" },
@@ -30,7 +30,7 @@ const Header = () => {
                             <ul className='flex flex-row ml-auto mr-[3rem]' >
                                 {links.map((link, id) => (
                                     <li className='relative' key={id} >
-                                        <a className='text-[20px] capitalize hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]  duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ' href={link.path}>
+                                        <a className='text-[20px] capitalize hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]  duration-1000 my-[5px] mx-[15px] font-medium p-[15px]' href={link.path}>
                                             {link.labal}
                                         </a>
                                     </li>
