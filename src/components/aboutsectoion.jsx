@@ -7,12 +7,12 @@ const Aboutsectoion = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
                     <h1 className='text-[50px]' >About BBD (Who We Are)</h1>
-                    <div className="  mx-auto w-[600px]  relative mb-[75px] ">
-                        <div className="absolute bg-black w-[80px] h-[2px] top-[50%]   z-50">
+                    <div className="  mx-auto w-full md:w-[600px]  relative mb-[75px] ">
+                        <div className="absolute hidden md:block bg-black w-[80px] h-[2px] top-[50%]   z-50">
 
                         </div>
                         <p className='text-[25px] instrument text-[#ef4523]' >"Your Trusted Digital Growth Partner"</p>
-                        <div className="absolute bg-black w-[80px] h-[2px] top-[50%] right-0   z-50">
+                        <div className="absolute hidden md:block bg-black w-[80px] h-[2px] top-[50%] right-0   z-50">
 
                         </div>
                     </div>
