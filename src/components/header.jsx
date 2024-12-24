@@ -13,7 +13,7 @@ const Header = () => {
         { id: 3, labal: "our work", path: "/ourwork" },
         { id: 4, labal: "awards", path: "/awards" },
         { id: 5, labal: "clients", path: "/client" },
-        { id: 6, labal: "careers", path: "/careers" },
+        { id: 6, labal: "careers", path: "/carrers" },
         { id: 7, labal: "contact us", path: "/contact" },
     ]
 
