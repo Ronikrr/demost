@@ -21,6 +21,42 @@ const Whychoose = () => {
                     </div>
 
                 </div>
+                <div className="w-full ">
+                    <div className="flex flex-col justify-center w-1/2 mx-auto text-center head">
+                        <h1 className='text-[30px]' >Expert Digital Marketers</h1>
+                        <div className="  mx-auto w-[600px]  relative mt-[75px] ">
+                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-full ">
+                    <div className="flex flex-col justify-center w-1/2 ml-auto text-center head">
+                        <h1 className='text-[30px]' >Data-Driven Strategies
+                        </h1>
+                        <div className="  mx-auto w-[600px]  relative mt-[75px] ">
+                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
+                        </div>
+
+                    </div>
+                    <div className="flex flex-col justify-center w-1/2 mr-auto text-center head">
+                        <h1 className='text-[30px]' >Customized Growth Plans
+                        </h1>
+                        <div className="  mx-auto w-[600px]  relative mt-[75px] ">
+                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-full ">
+                    <div className="flex flex-col justify-center w-1/2 mx-auto text-center head">
+                        <h1 className='text-[30px]' > Proven Results Guaranteed</h1>
+                        <div className="  mx-auto w-[600px]  relative mt-[75px] ">
+                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </section>
