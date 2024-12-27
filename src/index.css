@@ -1,53 +1,125 @@
+/* Tailwind Base Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+        
+@font-face {
+  font-family: "Getaway";
+  src: url("./assets/font/getaway.otf") format("opentype");
+}
 
+/* Body and Default Font */
+body {
+  margin: 0;
+  font-family: "Getaway", Sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
 
+/* Code styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 
-@layer utilities{
-  .instrument{
-     font-family: "Instrument Sans", serif;
+/* Custom Utilities */
+@layer utilities {
+  :root{
+        --theme_black: #171717;
+        --theme_white: #f7f7f7;
+        --theme_green: #17f700;
+
   }
-  .circle{
+.roboto_thin {
+            font-family: "Roboto", serif;
+            font-style: normal;
+        }
+  .homevision .homevisionpath{
+
+    -webkit-text-stroke: .3rem var(--theme_black);
+  }
+  .poppins_thin {
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+  .goblin_one_regular {
+    font-family: "Goblin One", serif;
+    font-style: normal;
+  }
+
+  .germania_one_regular {
+    font-family: "Germania One", serif;
+    font-style: normal;
+  }
+
+  .geostar_regular {
+    font-family: "Geostar Fill", serif;
+    font-style: normal;
+  }
+
+  .instrument {
+    font-family: "Instrument Sans", sans-serif;
+  }
+
+  /* Animations */
+  .circle {
     animation: rotatText 20s linear infinite;
   }
-  .image_icon{
-    transform: translate(-50%,-50%);
+
+  .image_icon {
+    transform: translate(-50%, -50%);
   }
-  .textcircle{
+
+  .textcircle {
     fill: black;
     width: 220px;
     height: 220px;
     transform: scale(1);
   }
-  @keyframes rotatText{
-    0%{
+
+  /* Keyframe Animation */
+  @keyframes rotatText {
+    0% {
       transform: rotate(360deg);
     }
-    100%{
-      
+    100% {
       transform: rotate(0deg);
     }
   }
+   @keyframes vision_scrolllines_mov {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes vision_scrolllines_move {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
 }
 
-@font-face {
-  font-family: 'Getaway';
-  src: url('./assets/font/getaway.otf') format('opentype');
+@layer components {
+  #root {
+    @apply overflow-x-hidden md:overflow-x-visible;
+  }
 }
-body {
-  margin: 0;
-   font-family: "Getaway", Sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  background-image: url("https://uithemez.com/i/artech/home6_modernAgency/assets/img/body_bg.png");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Font Face */

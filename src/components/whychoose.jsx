@@ -1,66 +1,77 @@
-import React from 'react'
+import React from 'react';
+import boy_3 from '../assets/banner/rb_86609.png';
+import plus from '../assets/banner/image 178.png';
 
 const Whychoose = () => {
     return (
-        <section
-            className="banner relative pt-[100px] lg:py-[100px] w-full h-full  ">
-            <div className="absolute w-full h-full">
-                <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className='-rotate-6' alt="" />
+        <section className="banner relative  py-[0px] h-[200vh] lg:py-[100px] w-full ">
+            <div className="absolute w-full h-full -z-10">
+                <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-screen -rotate-6" alt="" />
             </div>
             <div className="container mx-auto">
+                {/* Heading Section */}
                 <div className="flex flex-col justify-center text-center head">
-                    <h1 className='text-[50px]' >Why Choose Us..!</h1>
-                    <div className="  mx-auto w-full md:w-[600px]  relative mb-[75px] ">
-                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%]   z-50">
-
-                        </div>
-                        <p className='text-[25px] instrument text-[#ef4523]' >"Why Choose BBD ?"</p>
-                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-0   z-50">
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="w-full ">
-                    <div className="flex flex-col justify-center w-full mx-auto text-center md:w-1/2 head">
-                        <h1 className='text-[30px]' >Expert Digital Marketers</h1>
-                        <div className="  mx-auto w-full md:w-[600px]  relative mt-[75px] ">
-                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div className="w-full ">
-                    <div className="flex flex-col justify-center w-full ml-auto text-center md:w-1/2 head">
-                        <h1 className='text-[30px]' >Data-Driven Strategies
-                        </h1>
-                        <div className="  mx-auto w-full md:w-[600px]  relative mt-[75px] ">
-                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
-                        </div>
-
-                    </div>
-                    <div className="flex flex-col justify-center w-full mr-auto text-center md:w-1/2 head">
-                        <h1 className='text-[30px]' >Customized Growth Plans
-                        </h1>
-                        <div className="  mx-auto w-full md:w-[600px]  relative mt-[75px] ">
-                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div className="w-full ">
-                    <div className="flex flex-col justify-center w-full mx-auto text-center md:w-1/2 head">
-                        <h1 className='text-[30px]' > Proven Results Guaranteed</h1>
-                        <div className="  mx-auto w-full md:w-[600px]  relative mt-[75px] ">
-                            <p className='text-[17px] instrument text-black'> Skilled professionals crafting winning <br /> marketing strategies </p>
-                        </div>
-
+                    <h1 className="text-[20px] sm:text-[50px] goblin_one_regular">Why Choose Us..!</h1>
+                    <div className="mx-auto w-full md:w-[600px] relative mb-[75px]">
+                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] z-50"></div>
+                        <p className="text-[20px] sm:text-[25px] poppins_thin text-[#ef4523]">"Why Choose BBD ?"</p>
+                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-0 z-50"></div>
                     </div>
                 </div>
 
+                {/* First Section */}
+                <div className="relative flex items-center w-full poppins_thin lg:pt-[95px]  flex-col sm:flex-row">
+                    <div className="flex flex-col pb-[95px] lg:pb-0 sm:absolute xl:left-32 4xl:top-[-64px] 4xl:left-[-25px] justify-center w-full mx-auto text-center md:w-[436px] h-full lg:h-[506px] head">
+                        <img src={boy_3} className="  xl:w-[300px] xl:h-[365px] 4xl:w-[436px] 4xl:h-[506px]" alt="" />
+                    </div>
+                    <div className="flex flex-col relative xl:absolute xl:top-[57px] xl:left-[477px] justify-center w-full text-center md:w-[754px] head">
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
+                        <h1 className="text-[18px] sm:text-[24px]">✅ Expert Digital Marketers</h1>
+                        <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
+                            <p className="text-[14px] sm:text-[18px] poppins_thin text-black">Skilled professionals crafting winning <br /> marketing strategies</p>
+                        </div>
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] right-[-40%] lg:right-0 absolute" alt="" />
+                    </div>
+                </div>
+
+                {/* Second Section */}
+                <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
+                    <div className="flex flex-col relative xl:absolute xl:top-[700px] xl:right-[109px] justify-center w-full text-center md:w-[754px] head">
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
+                        <h1 className="text-[18px] sm:text-[24px]">✅ Data-Driven Strategies</h1>
+                        <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
+                            <p className="text-[14px] sm:text-[17px] instrument text-black">Skilled professionals crafting winning <br /> marketing strategies</p>
+                        </div>
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px]  right-[-40%] lg:right-0 absolute" alt="" />
+                    </div>
+                </div>
+
+                {/* Third Section */}
+                <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
+                    <div className="flex flex-col relative xl:absolute xl:top-[850px] 2xl:left-[100px] 4xl:left-[160px] justify-center w-full text-center md:w-[754px] head">
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
+                        <h1 className="text-[18px] sm:text-[24px]">✅ Customized Growth Plans</h1>
+                        <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
+                            <p className="text-[14px] sm:text-[17px] instrument text-black">Skilled professionals crafting winning <br /> marketing strategies</p>
+                        </div>
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] right-[-40%] lg:right-0 absolute" alt="" />
+                    </div>
+                </div>
+
+                {/* Fourth Section */}
+                <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
+                    <div className="flex flex-col relative xl:absolute xl:top-[1215px] xl:left-[606px] justify-center w-full text-center md:w-[754px] head">
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
+                        <h1 className="text-[18px] sm:text-[24px]">✅ Proven Results Guaranteed</h1>
+                        <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
+                            <p className="text-[14px] sm:text-[18px] poppins_thin text-black">Skilled professionals crafting winning <br /> marketing strategies</p>
+                        </div>
+                        <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] right-[-40%] lg:right-0 absolute" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Whychoose
+export default Whychoose;

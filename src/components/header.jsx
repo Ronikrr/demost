@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <div className="instrument">
             <div
-                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto  z-[99] py-[10px] px-[3vw] transition-all duration-300 ${scrolled ? 'bg-[#f6f6f6] py-[0px]' : 'bg-transparent  duration-1000   after:absolute after:top-[15px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]'}`}
+                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto  z-[99] py-[20px] px-[3vw] transition-all duration-300 ${scrolled ? 'bg-[#fff] py-[0px] shadow-md top-0 ' : 'bg-transparent  duration-1000   after:absolute after:top-[25px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]  '}`}
             >
                 <div className="w-full">
                     <div className="relative flex items-center justify-between z-[5]">
@@ -52,7 +52,7 @@ const Header = () => {
                                     return (
                                         <li className="relative" key={id}>
                                             <Link
-                                                className={`text-[20px] capitalize duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ${isActive
+                                                className={` 4xl:text-[20px]  xl:text-[17px] capitalize duration-1000 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px] ${isActive
                                                     ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
                                                     : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'
                                                     }`}
