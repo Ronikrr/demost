@@ -4,7 +4,7 @@ import plus from '../assets/banner/image 178.png';
 
 const Whychoose = () => {
     return (
-        <section className="banner relative  py-[0px] h-[200vh] lg:py-[100px] w-full ">
+        <section className="banner relative  py-[50px] h-full md:h-[200vh] lg:py-[100px] w-full ">
             <div className="absolute w-full h-full -z-10">
                 <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-screen -rotate-6" alt="" />
             </div>
@@ -36,7 +36,7 @@ const Whychoose = () => {
 
                 {/* Second Section */}
                 <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
-                    <div className="flex flex-col relative xl:absolute xl:top-[700px] xl:right-[109px] justify-center w-full text-center md:w-[754px] head">
+                    <div className="flex flex-col relative xl:absolute xl:top-[700px] 2xl:right-[-10px] 4xl:right-[109px] justify-center w-full text-center md:w-[754px] head">
                         <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Data-Driven Strategies</h1>
                         <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
@@ -48,7 +48,7 @@ const Whychoose = () => {
 
                 {/* Third Section */}
                 <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
-                    <div className="flex flex-col relative xl:absolute xl:top-[850px] 2xl:left-[100px] 4xl:left-[160px] justify-center w-full text-center md:w-[754px] head">
+                    <div className="flex flex-col relative xl:absolute xl:top-[850px]  2xl:left-[40px] 4xl:left-[160px] justify-center w-full text-center md:w-[754px] head">
                         <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Customized Growth Plans</h1>
                         <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
@@ -60,7 +60,7 @@ const Whychoose = () => {
 
                 {/* Fourth Section */}
                 <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
-                    <div className="flex flex-col relative xl:absolute xl:top-[1215px] xl:left-[606px] justify-center w-full text-center md:w-[754px] head">
+                    <div className="flex flex-col relative xl:absolute md:top-[1215px] md:left-[485px] 4xl:top-[1215px] 4xl:left-[606px] justify-center w-full text-center md:w-[754px] head">
                         <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Proven Results Guaranteed</h1>
                         <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
