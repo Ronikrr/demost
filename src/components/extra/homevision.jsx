@@ -108,7 +108,7 @@ const HomeVision = () => {
     };
 
     return (
-        <div className="homevision relative flex flex-col items-center justify-center w-full h-[40rem] md:h-[50rem] lg:h-[60rem] overflow-hidden bg-[#ef4523] z-[-1]">
+        <div className="homevision relative flex flex-col items-center justify-center w-full h-[40rem] md:h-[50rem] lg:h-[50rem] overflow-hidden bg-[#ef4523] z-[-1]">
             {[...Array(4)].map((_, index) => (
                 <div
                     key={index}

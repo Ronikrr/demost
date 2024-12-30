@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     const tatvaScroll = new TatvaScroll({
-      lerp: 0.1,
+      lerp: 0.2,
       multiplier: 1,
       smoothWheel: true,
       smoothTouch: true,
