@@ -10,7 +10,22 @@ import Awards from './pages/awards';
 import Client from './pages/client';
 import Carrers from './pages/carrers';
 import Contact from './pages/contact';
+import TatvaScroll from 'tatva-scroll';
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    const tatvaScroll = new TatvaScroll({
+      lerp: 0.1,
+      multiplier: 1,
+      smoothWheel: true,
+      smoothTouch: true,
+    });
+
+    // Optional: Clean up on component unmount
+    return () => {
+      tatvaScroll.destroy();
+    };
+  }, []);
   const Layout = ({ children }) => (
     <>
       <Header />
@@ -19,59 +34,64 @@ function App() {
     </>
   );
   return (
-    <Router>
+    <div id="scroll-container">
+      <Router>
 
-      <Routes>
-        <Route path='/' element={
-          <Layout>
-            <PageTitle title="Home" />
-            <Home />
-          </Layout>
-        } />
-        <Route path='/aboutpage' element={
-          <Layout>
-            <PageTitle title="About Page" />
-            <About />
-          </Layout>
-        } />
-        <Route path='/service' element={
-          <Layout>
-            <PageTitle title="Service page" />
-            <Servicepage />
-          </Layout>
-        } />
-        <Route path='/ourwork' element={
-          <Layout>
-            <PageTitle title="Ourwork page" />
-            <Ourwork />
-          </Layout>
-        } />
-        <Route path='/awards' element={
-          <Layout>
-            <PageTitle title="Awards page" />
-            <Awards />
-          </Layout>
-        } />
-        <Route path='/client' element={
-          <Layout>
-            <PageTitle title="Client page" />
-            <Client />
-          </Layout>
-        } />
-        <Route path='/carrers' element={
-          <Layout>
-            <PageTitle title="Carrer page" />
-            <Carrers />
-          </Layout>
-        } />
-        <Route path='/contact' element={
-          <Layout>
-            <PageTitle title="Contact page" />
-            <Contact />
-          </Layout>
-        } />
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path='/' element={
+            <Layout>
+              <PageTitle title="Home" />
+              <Home />
+            </Layout>
+          } />
+          <Route path='/aboutpage' element={
+            <Layout>
+              <PageTitle title="About Page" />
+              <About />
+            </Layout>
+          } />
+          <Route path='/service' element={
+            <Layout>
+              <PageTitle title="Service page" />
+              <Servicepage />
+            </Layout>
+          } />
+          <Route path='/ourwork' element={
+            <Layout>
+              <PageTitle title="Ourwork page" />
+              <Ourwork />
+            </Layout>
+          } />
+          <Route path='/awards' element={
+            <Layout>
+              <PageTitle title="Awards page" />
+              <Awards />
+            </Layout>
+          } />
+          <Route path='/client' element={
+            <Layout>
+              <PageTitle title="Client page" />
+              <Client />
+            </Layout>
+          } />
+          <Route path='/carrers' element={
+            <Layout>
+              <PageTitle title="Carrer page" />
+              <Carrers />
+            </Layout>
+          } />
+          <Route path='/contact' element={
+            <Layout>
+              <PageTitle title="Contact page" />
+              <Contact />
+            </Layout>
+          } />
+        </Routes>
+      </Router>
+      {/* <div style={{ height: '200vh' }}>Scroll through this content</div> */}
+    </div>
+
+
   );
 }
 
