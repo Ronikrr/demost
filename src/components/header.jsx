@@ -10,7 +10,7 @@ const Header = () => {
     // Track scroll position
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 700) {
+            if (window.scrollY > 100) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -38,12 +38,12 @@ const Header = () => {
     return (
         <div className="instrument">
             <div
-                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto  z-[99] py-[20px] px-[3vw] transition-all duration-300 ${scrolled ? 'bg-[#fff] py-[0px] shadow-md top-0 ' : 'bg-transparent  duration-1000   after:absolute after:top-[25px] after:right-0 after:w-[70%] after:h-[80px] after:rounded-l-full after:bg-[#f6f6f6]  '}`}
+                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto  z-[99] py-[20px] px-[3vw] transition-all duration-300 ${scrolled ? 'bg-[#fff] py-[0px] shadow-md top-0 h-[90px] items-center ' : 'bg-transparent  duration-1000    '}`}
             >
                 <div className="w-full">
                     <div className="relative flex items-center justify-between z-[5]">
                         <a className="inline-block me-[16px] py-[8px]" href="/">
-                            <img src={Logo} className="h-[75px]" alt="Logo" />
+                            <img src={Logo} className="h-[60px]" alt="Logo" />
                         </a>
                         <div className="items-center flex-grow hidden lg:flex">
                             <ul className="flex flex-row ml-auto mr-[3rem]">

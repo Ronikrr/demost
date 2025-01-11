@@ -11,6 +11,7 @@ import Client from './pages/client';
 import Carrers from './pages/carrers';
 import Contact from './pages/contact';
 import TatvaScroll from 'tatva-scroll';
+import Footer from './components/footer';
 import { useEffect } from 'react';
 function App() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
     <>
       <Header />
       <main>{children}</main>
-
+      <Footer />
     </>
   );
   return (
