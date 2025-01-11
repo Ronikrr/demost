@@ -63,6 +63,9 @@ code {
     --theme_white: #f7f7f7;
     --theme_green: #17f700;
   }
+  #root{
+    overflow-x: hidden;
+  }
   .Impact_Regular {
     font-family: "Impact Regular";
     font-style: normal;
