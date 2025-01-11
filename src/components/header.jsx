@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <div className="instrument">
             <div
-                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto duration-1000  z-[99] py-[20px] px-[3vw] transition-all  ${scrolled ? 'bg-[#fff] py-[0px] shadow-md top-0 h-[80px] items-center duration-1000 ' : 'bg-transparent  duration-1000    '}`}
+                className={`fixed top-0 hidden lg:flex left-0 w-full h-auto duration-1000  z-[99] py-[20px] px-[3vw] transition-all  ${scrolled ? 'bg-[#fff] py-[0px] shadow-md top-0 h-[80px] items-center  transition-all duration-1000 ' : 'bg-transparent  transition-all  duration-1000    '}`}
             >
                 <div className="w-full">
                     <div className="relative flex items-center justify-between z-[5]">

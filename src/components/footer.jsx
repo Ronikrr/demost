@@ -3,7 +3,6 @@ import { FaPinterestP } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-
 import Logo from "../assets/logo/logo.png";
 import { BsEnvelope } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -34,19 +33,21 @@ const Footer = () => {
                         <div className="flex flex-col w-full lg:w-2/12 ">
                             <h4 className="mb-[20px] text-[22px]">Quick Link</h4>
                             <div className="flex flex-col w-full">
-                                <Link href="" className="pb-[15px]" >home</Link>
-                                <Link href="" className="pb-[15px]" >about</Link>
-                                <Link href="" className="pb-[15px]" >service</Link>
-                                <Link href="" className="pb-[15px]" >blog</Link>
+                                {["home", "about", "service", "blog"].map((link) => (
+                                    <Link key={link} to={`/${link}`} className="mb-4  transition-all hover:font-bold  duration-1000 hover:text-[#ef4532] capitalize">
+                                        {link}
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                         <div className="flex flex-col w-full lg:w-2/12 ">
                             <h4 className="mb-[20px] text-[22px]">support us</h4>
                             <div className="flex flex-col w-full">
-                                <Link href="" className="pb-[15px]" >contact us</Link>
-                                <Link href="" className="pb-[15px]" >Terms & Conditions</Link>
-                                <Link href="" className="pb-[15px]" >Career</Link>
-                                <Link href="" className="pb-[15px]" >Help</Link>
+                                {["contact us", "terms & conditions", "career", "help"].map((link) => (
+                                    <Link key={link} to={`/${link.replace(/\s+/g, "-").toLowerCase()}`} className="mb-4 hover:font-bold  transition-all  duration-1000 hover:text-[#ef4532] capitalize">
+                                        {link}
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                         <div className="flex flex-col w-full lg:w-4/12 ">
@@ -58,35 +59,17 @@ const Footer = () => {
                                     subscribe
                                 </button>
                             </div>
-                            <div className="flex items-center justify-center gap-4 ">
-                                <Link href="" className="flex items-center ">
-                                    <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
-                                        <FaPinterestP />
-                                    </div>
-
-                                </Link>
-                                <Link href="" className="flex items-center ">
-                                    <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
-                                        <FaXTwitter />
-                                    </div>
-
-                                </Link>
-                                <Link href="" className="flex items-center ">
-                                    <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
-                                        <FaFacebookF />
-                                    </div>
-
-                                </Link>
-                                <Link href="" className="flex items-center ">
-                                    <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
-                                        <FaInstagram />
-                                    </div>
-                                </Link>
+                            <div className="flex items-center justify-center gap-4 lg:justify-normal ">
+                                {[FaPinterestP, FaXTwitter, FaFacebookF, FaInstagram].map((Icon, index) => (
+                                    <Link key={index} to="#" className="w-[40px] h-[40px] border-2 transition-all  duration-1000 border-black flex items-center justify-center rounded-full hover:bg-[#ef4523]  ">
+                                        <Icon />
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                     </div>
                     <div className=" text-center w-full border-t border-[#f6f6f6] py-[50px]">
-                        <p>Copyright © 2024 All Rights Reserved.</p>
+                        <p>Copyright © {new Date().getFullYear()} All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
