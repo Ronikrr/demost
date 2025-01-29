@@ -4,6 +4,7 @@ import Whychoose from '../components/whychoose'
 import Aboutsectoion from '../components/aboutsectoion'
 import HomeVision from '../components/extra/homevision'
 import Contactbutton from '../components/extra/contactbutton'
+import Exportservice from '../components/exportservice'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <Aboutsectoion />
       <Whychoose /> 
+      <Exportservice />
       {/* <HomeVision /> */}
       {/* <Contactbutton /> */}
     </div>
