@@ -12,6 +12,13 @@ const Exportservice = () => {
         { id: 4, title: "PPC Advertising", subtitle: "Maximize ROI with data-driven, high-converting paid ads." },
         { id: 5, title: "Brand Strategy & Consulting", subtitle: "Build a strong brand identity & long-term business growth." }
     ]
+    const images = [
+        { id: 1, src: img },
+        { id: 2, src: img2 },
+        { id: 3, src: img4 },
+        { id: 4, src: img1 },
+        { id: 5, src: img3 }
+    ]
     return (
         <section className="banner relative  py-[50px] h-[275vh] md:h-[160vh] lg:py-[100px] w-full ">
             <div className="absolute w-full h-[135vh] -z-10">
@@ -47,25 +54,15 @@ const Exportservice = () => {
                     </div>
                 </div>
                 <div className="flex flex-wrap items-center justify-center w-full ">
-
                     <div className="w-full py-[25px] overflow-hidden  mx-auto flex flex-wrap space-y-[50px] lg:space-y-0 justify-between items-start text-center my-[20px] mx-auto  rounded-[20px] h-[100px] space-x-[10px] ">
-                        <div className="w-full h-full lg:w-2/12 ">
-                            <img src={img} className='object-contain w-full h-full aspect-video' alt="" />
-                        </div>
-                        <div className="w-full h-full lg:w-2/12 ">
-                            <img src={img2} className='object-contain w-full h-full aspect-video' alt="" />
-                        </div>
-                        <div className="w-full h-full lg:w-2/12 ">
-                            <img src={img4} className='object-contain w-full h-full aspect-video' alt="" />
-                        </div>
-                        <div className="w-full h-full lg:w-2/12 ">
-                            <img src={img1} className='object-contain w-full h-full aspect-video' alt="" />
-                        </div>
-                        <div className="w-full h-full lg:w-2/12 ">
-                            <img src={img3} className='object-contain w-full h-full aspect-video' alt="" />
-                        </div>
-                    </div>
+                        {images.map((data, index) => (
 
+                            <div className="w-full h-full lg:w-2/12 " key={index} >
+                                <img src={data.src} className='object-contain w-full h-full aspect-video' alt="" />
+                        </div>
+                        ))}
+
+                    </div>
                 </div>
 
             </div>
