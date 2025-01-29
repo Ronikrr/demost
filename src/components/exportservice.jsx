@@ -48,7 +48,7 @@ const Exportservice = () => {
                 </div>
                 <div className="flex flex-wrap items-center justify-center w-full ">
 
-                    <div className="w-full py-[25px] overflow-hidden  mx-auto flex flex-wrap space-y-[50px] lg:space-y-0 justify-between items-start text-center my-[20px] mx-auto  rounded-[20px] h-[192px] space-x-[10px] ">
+                    <div className="w-full py-[25px] overflow-hidden  mx-auto flex flex-wrap space-y-[50px] lg:space-y-0 justify-between items-start text-center my-[20px] mx-auto  rounded-[20px] h-[100px] space-x-[10px] ">
                         <div className="w-full h-full lg:w-2/12 ">
                             <img src={img} className='object-contain w-full h-full aspect-video' alt="" />
                         </div>
