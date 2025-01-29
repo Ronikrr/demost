@@ -78,26 +78,26 @@ const Banner = () => {
 
     return (
         <section
-            className="banner relative pt-[100px] 2xl:pt-[313px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png')] before:bg-cover before:bg-center">
+            className="banner relative pt-[100px] xl:pt-[313px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png')] before:bg-cover before:bg-center">
 
             <div className="absolute hidden md:block w-[203px] h-[475px] top-[444px] left-[39px]">
                 <img src={boy2} className='w-full h-full' alt="Boy Image" />
             </div>
             <div className="absolute hidden md:block top-[105px] w-[20%] left-[14px]">
                 <img src={image_1} className='w-full' alt="Image 1" />
-                <div className="xl:text-[30px] 4xl:text-[34px] w-[40%] absolute xl:top-[30%] 4xl:top-[117px] right-[86px] germania_one_regular">
+                <div className="xl:text-[30px] 4xl:text-[34px] w-[40%] absolute xl:top-[30%] 4xl:top-[117px] 4xl:right-[86px] xl:right-[70px] germania_one_regular">
                     kya kar <br /> rahe ho..
                 </div>
             </div>
-            <div className="absolute hidden md:block top-[105px] w-[35%] right-[-50px]">
+            <div className="absolute hidden md:block top-[105px] w-[37%]  right-[-50px]">
                 <img src={image_2} className='w-full' alt="Image 2" />
-                <div className="xl:text-[30px] 4xl:text-[34px] text-center w-[50%] absolute xl:top-[35%] 4xl:top-[210px] xl:right-[25%] 4xl:right-[165px] germania_one_regular">
+                <div className="xl:text-[30px] 4xl:text-[34px] text-center w-[50%] absolute xl:top-[32%] 4xl:top-[210px] xl:right-[25%] 4xl:right-[165px] germania_one_regular">
                     kuch nahi <br />
                     digital agency dundh <br />
                     raha hu.!
                 </div>
             </div>
-            <div className="container px-[15px] pb-[20px] mx-auto 2xl:w-[1320px]">
+            <div className="container px-[15px] pb-[20px] mx-auto xl:w-[1320px]">
                 <div className="relative flex items-center justify-center w-full mx-auto title">
                     <h1 className="relative text-[40px] sm:text-[60px] lg:text-[150px] xl:text-[300px] 2xl:text-[350px] w-full lg:w-[1016px] uppercase flex flex-wrap">
                         <div className="cursor-pointer relative h-full w-[301.9px] 2xl:h-[328.18px] group flex items-center justify-end">
@@ -117,7 +117,7 @@ const Banner = () => {
             </div>
 
             <div className="container px-auto lg:px-0 z-20 relative 2xl:w-[1320px] mx-auto">
-                <h1 className='text-[50px] sm:text-[70px] lg:text-[100px] xl:text-[150px] 4xl:text-[180px] leading-none capitalize text-center'>
+                <h1 className='text-[50px] sm:text-[70px] lg:text-[100px] xl:text-[125px] 4xl:text-[180px] leading-none capitalize text-center'>
                     <span className='text-[#ef4523]'>delivers</span> results!
                 </h1>
             </div>
