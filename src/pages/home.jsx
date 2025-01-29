@@ -5,6 +5,7 @@ import Aboutsectoion from '../components/aboutsectoion'
 // import HomeVision from '../components/extra/homevision'
 // import Contactbutton from '../components/extra/contactbutton'
 import Exportservice from '../components/exportservice'
+import Havelook from '../components/havelook'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Aboutsectoion />
       <Whychoose /> 
       <Exportservice />
+      <Havelook />
       {/* <HomeVision /> */}
       {/* <Contactbutton /> */}
     </div>
