@@ -13,8 +13,8 @@ const Exportservice = () => {
         { id: 5, title: "Brand Strategy & Consulting", subtitle: "Build a strong brand identity & long-term business growth." }
     ]
     return (
-        <section className="banner relative  py-[50px] h-[215vh] md:h-[180vh] lg:py-[100px] w-full ">
-            <div className="absolute w-full h-[155vh] -z-10">
+        <section className="banner relative  py-[50px] h-[275vh] md:h-[160vh] lg:py-[100px] w-full ">
+            <div className="absolute w-full h-[135vh] -z-10">
                 <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-full rotate-6" alt="" />
             </div>
             <div className="container mx-auto">
@@ -48,7 +48,7 @@ const Exportservice = () => {
                 </div>
                 <div className="flex flex-wrap items-center justify-center w-full ">
 
-                    <div className="w-full py-[25px]  mx-auto flex flex-wrap space-y-[50px] justify-between items-center text-center my-[20px] me-0 lg:me-[20px] rounded-[20px] h-[192px] space-x-[10px] ">
+                    <div className="w-full py-[25px] overflow-hidden  mx-auto flex flex-wrap space-y-[50px] lg:space-y-0 justify-between items-start text-center my-[20px] mx-auto  rounded-[20px] h-[192px] space-x-[10px] ">
                         <div className="w-full h-full lg:w-2/12 ">
                             <img src={img} className='object-contain w-full h-full aspect-video' alt="" />
                         </div>
@@ -67,6 +67,7 @@ const Exportservice = () => {
                     </div>
 
                 </div>
+
             </div>
         </section>
     )

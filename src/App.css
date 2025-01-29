@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Track color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef4523;
+  /* Scroll thumb color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Scroll thumb color on hover */
+}
