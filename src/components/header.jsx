@@ -79,7 +79,6 @@ const Header = () => {
                                 <FaBars onClick={hantogglemenu} />
                             </div>
                         </div>
-
                         {isopenmenu && (
                             <div
                                 className={`flex items-center flex-grow w-full transition-all duration-1000 ease-in-out opacity-100 ${isopenmenu ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -98,12 +97,10 @@ const Header = () => {
                                 </ul>
                             </div>
                         )}
-
                     </div>
                 </div>
             </div>
-
-        </div >
+        </div>
     )
 }
 
