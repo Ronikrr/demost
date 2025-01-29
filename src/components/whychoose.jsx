@@ -20,11 +20,11 @@ const Whychoose = () => {
                 </div>
 
                 {/* First Section */}
-                <div className="relative flex items-center w-full poppins_thin lg:pt-[95px]  flex-col sm:flex-row">
-                    <div className="flex flex-col pb-[95px] lg:pb-0 sm:absolute xl:left-32 4xl:top-[-64px] 4xl:left-[-25px] justify-center w-full mx-auto text-center md:w-[436px] h-full lg:h-[506px] head">
+                <div className="flex flex-col relative pb-[95px] lg:pb-0 lg:absolute xl:left-32 4xl:top-[-64px] 4xl:left-[-25px] justify-center w-full mx-auto text-center md:w-[436px] h-full lg:h-[506px] head">
                         <img src={boy_3} className="  xl:w-[300px] xl:h-[365px] 4xl:w-[436px] 4xl:h-[506px]" alt="" />
                     </div>
-                    <div className="flex flex-col relative xl:absolute xl:top-[57px] xl:left-[477px] justify-center w-full text-center md:w-[754px] head">
+                <div className="relative flex items-center w-full poppins_thin justify-center lg:pt-[95px]  flex-col sm:flex-row">
+                    <div className="flex flex-col relative right-0 xl:absolute xl:top-[57px] xl:left-[477px] justify-center w-full text-center md:w-[754px] head">
                         <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Expert Digital Marketers</h1>
                         <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
@@ -60,7 +60,7 @@ const Whychoose = () => {
 
                 {/* Fourth Section */}
                 <div className="w-full poppins_thin flex flex-col sm:flex-row justify-center mt-[75px]">
-                    <div className="flex flex-col relative xl:absolute md:top-[1215px] md:left-[485px] 4xl:top-[1215px] 4xl:left-[606px] justify-center w-full text-center md:w-[754px] head">
+                    <div className="flex flex-col relative xl:absolute xl:top-[1215px] xl:left-[485px] 4xl:top-[1215px] 4xl:left-[606px] justify-center w-full text-center md:w-[754px] head">
                         <img src={plus} className="w-[206px] sm:w-[306px] h-[206px] sm:h-[306px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Proven Results Guaranteed</h1>
                         <div className="mx-auto w-full md:w-[600px] relative mt-[150px]">
