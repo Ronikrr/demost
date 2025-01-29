@@ -21,9 +21,7 @@ const Exportservice = () => {
     ]
     return (
         <section className="banner relative  pt-[0px] pb-[50px] h-full lg:pb-[50px] lg:pt-0 w-full ">
-            <div className="absolute w-full h-[135vh] -z-10">
-                <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-full rotate-6" alt="" />
-            </div>
+
             <div className="container mx-auto mt-[50px]">
                 <div className="flex flex-col justify-center text-center head">
                     <h1 className="text-[20px] sm:text-[50px] goblin_one_regular">Have a Look</h1>

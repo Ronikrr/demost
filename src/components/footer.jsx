@@ -9,7 +9,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="relative capitalize bg-white shadow-lg footer poppins_thin ">
+        <div className="relative overflow-hidden capitalize bg-white shadow-lg footer poppins_thin ">
             <div className="container mx-auto">
                 <div className="pt-[60px] flex flex-wrap border-t w-full border-[#f6f6f6] gap-[30px] ">
                     <div className="lg:p-[10px] mb-[30px] w-full flex flex-col lg:flex-row items-center gap-[30px]">
