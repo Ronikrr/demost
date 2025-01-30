@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      cursor: {
+        pointer: "url('https://www.t3bucket.com/f/1e7d37cc-558f-4f37-bad4-7880748df02d-Group419.png')16 16, pointer",
+      },
+
       screens: {
         'sm': '640px',
         'md': '768px',

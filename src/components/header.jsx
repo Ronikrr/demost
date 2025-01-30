@@ -42,7 +42,7 @@ const Header = () => {
             >
                 <div className="w-full">
                     <div className="relative flex items-center justify-between z-[5]">
-                        <a className="inline-block me-[16px] py-[8px]" href="/">
+                        <a className=" cursor-pointer inline-block me-[16px] py-[8px]" href="/">
                             <img src={Logo} className="h-[60px]" alt="Logo" />
                         </a>
                         <div className="items-center flex-grow hidden lg:flex">
@@ -51,8 +51,8 @@ const Header = () => {
                                     const isActive = location.pathname === link.path;
                                     return (
                                         <li className="relative" key={id}>
-                                            <Link
-                                                className={` 4xl:text-[20px]  xl:text-[17px] capitalize duration-1000 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px] ${isActive
+                                            <Link 
+                                                className={`cursor-pointer 4xl:text-[20px]  xl:text-[17px] capitalize duration-1000 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px] ${isActive
                                                     ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
                                                     : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'
                                                     }`}
