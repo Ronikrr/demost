@@ -27,8 +27,8 @@ const Exportservice = () => {
                     {data.map((data, index) => {
                         return (
                             <div className="w-full py-[25px] text-center my-[20px] me-0 lg:me-[20px] rounded-[20px] h-[150px] space-y-[10px] xl:w-[514px] border border-black " key={index}>
-                                <h1 className='poppins_thin text-[24px] font-medium'> {data.title} </h1>
-                                <p className='poppins_thin px-[75px]' > {data.subtitle} </p>
+                                <h1 className='poppins_thin text-[17px] lg:text-[24px] font-medium'> {data.title} </h1>
+                                <p className='poppins_thin px-5 lg:px-[75px]' > {data.subtitle} </p>
                             </div>
                         )
                     })}
