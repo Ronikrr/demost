@@ -34,7 +34,7 @@ const Whychoose = () => {
                     </div>
                 </div>
                 <div className="relative my-10 lg:my-20 flex items-center  w-full poppins_thin justify-center xl:justify-end lg:pt-[95px]  flex-col sm:flex-row">
-                    <div className="flex flex-col relative right-0  xl:right-0 2xl:right-[-5%] justify-center w-full text-center xl:w-[525px] 2xl:w-[754px] head">
+                    <div className="flex flex-col relative right-0  xl:right-0 2xl:right-[-3%] justify-center w-full text-center xl:w-[525px] 2xl:w-[754px] head">
                         <img src={plus} className="hidden lg:block xl:w-[180px] xl:h-[180px]  2xl:left-0 2xl:w-[306px] sm:w-[106px]  2xl:h-[306px] sm:h-[206px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Expert Digital Marketers</h1>
                         <div className="mx-auto w-full md:w-[400px] relative xl:mt-[75px] 2xl:mt-[150px]">
@@ -54,7 +54,7 @@ const Whychoose = () => {
                     </div>
                 </div>
                 <div className="relative my-10 lg:my-0 flex items-center w-full poppins_thin justify-center xl:justify-center lg:pt-[300px] xl:pt-[200px]  2xl:pt-[300px] flex-col sm:flex-row">
-                    <div className="flex flex-col relative right-0 xl:left-[6%] 2xl:left-[2.8%]   justify-center w-full text-center xl:w-[550px] 2xl:w-[754px] head">
+                    <div className="flex flex-col relative right-0 xl:left-[5%] 2xl:left-[2.8%]   justify-center w-full text-center xl:w-[525px] 2xl:w-[754px] head">
                         <img src={plus} className="hidden lg:block xl:w-[180px] xl:h-[180px]  2xl:left-0 2xl:w-[306px] sm:w-[106px]  2xl:h-[306px] sm:h-[206px] left-[-40%] lg:left-0 absolute" alt="" />
                         <h1 className="text-[18px] sm:text-[24px]">✅ Expert Digital Marketers</h1>
                         <div className="mx-auto w-full md:w-[400px] relative xl:mt-[75px] 2xl:mt-[150px]">
