@@ -17,9 +17,9 @@ const Exportservice = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
                     <h1 className="text-[20px] sm:text-[50px] goblin_one_regular">Our Expert Services</h1>
-                    <div className="mx-auto w-full md:w-[800px] relative mb-[50px]">
+                    <div className="mx-auto w-full md:w-[800px] relative mb-[25px] lg:mb-[50px]">
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] left-[-20%] z-50"></div>
-                        <p className="text-[20px] sm:text-[25px] poppins_thin text-[#ef4523]">“We help brands grow with customized marketing strategies.”</p>
+                        <p className="text-[15px] sm:text-[25px] poppins_thin text-[#ef4523]">“We help brands grow with customized marketing strategies.”</p>
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-[-20%] z-50"></div>
                     </div>
                 </div>
