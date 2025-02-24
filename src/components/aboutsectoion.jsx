@@ -6,7 +6,7 @@ const Aboutsectoion = () => {
             className="banner relative pt-[75px] pb-[75px] md:pt-[118px] md:pb-[100px]   ">
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
-                    <h1 className='text-[50px] goblin_one_regular' >About BBD (Who We Are)</h1>
+                    <h1 className='text-[30px] lg:text-[50px] goblin_one_regular' >About BBD (Who We Are)</h1>
                     <div className="  mx-auto w-full md:w-[600px]  relative mb-[75px] ">
                         <div className="absolute hidden md:block bg-black w-[153px] h-[2px] top-[50%] left-[-150px] z-50">
                         </div>
