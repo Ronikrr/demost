@@ -1,5 +1,5 @@
 import React from 'react'
-
+import box from '../assets/New folder/boxes (1).png'
 const Exportservice = () => {
     const data = [
         { id: 1, title: "Social Media Optimization", subtitle: "Boost engagement & visibility with expert social media strategies." },
@@ -12,7 +12,7 @@ const Exportservice = () => {
     return (
         <section className="banner relative  py-[50px] h-full lg:py-[100px] w-full ">
             <div className="absolute w-full h-[135vh] -z-10">
-                <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-full rotate-6" alt="" />
+                <img src={box} className="w-full h-full rotate-6" alt="" />
             </div>
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">

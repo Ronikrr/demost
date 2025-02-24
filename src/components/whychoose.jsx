@@ -1,12 +1,12 @@
 import React from 'react';
 import boy_3 from '../assets/banner/rb_86609.png';
 import plus from '../assets/banner/image 178.png';
-
+import box from '../assets/New folder/boxes (1).png'
 const Whychoose = () => {
     return (
         <section className="banner relative  py-[50px] lg:py-[100px] w-full ">
             <div className="absolute w-full h-[200vh] -z-10">
-                <img src="https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png" className="w-full h-full -rotate-6" alt="" />
+                <img src={box} className="w-full h-full -rotate-6" alt="" />
             </div>
             <div className="container mx-auto">
                 {/* Heading Section */}

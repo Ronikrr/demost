@@ -10,23 +10,9 @@ import Awards from './pages/awards';
 import Client from './pages/client';
 import Carrers from './pages/carrers';
 import Contact from './pages/contact';
-import TatvaScroll from 'tatva-scroll';
 import Footer from './components/footer';
-import { useEffect } from 'react';
 function App() {
-  useEffect(() => {
-    const tatvaScroll = new TatvaScroll({
-      lerp: 0.2,
-      multiplier: 1,
-      smoothWheel: true,
-      smoothTouch: true,
-    });
 
-    // Optional: Clean up on component unmount
-    return () => {
-      tatvaScroll.destroy();
-    };
-  }, []);
   const Layout = ({ children }) => (
     <>
       <Header />
