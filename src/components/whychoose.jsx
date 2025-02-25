@@ -117,13 +117,13 @@ const Whychoose = () => {
                 <WhyChooseItem
                     title="Expert Digital Marketers"
                     description="Skilled professionals crafting winning marketing strategies"
-                    extraClasses="xl:justify-start lg:pt-[95px]"
+                    extraClasses="xl:justify-center lg:pt-[95px]"
                 />
 
                 <WhyChooseItem
                     title="Cutting-Edge Tools"
                     description="Utilizing advanced marketing technologies for the best results"
-                    extraClasses="xl:justify-end lg:pt-[95px]"
+                    extraClasses="xl:justify-end lg:pt-[150px]"
                 />
 
                 <WhyChooseItem
@@ -135,7 +135,7 @@ const Whychoose = () => {
                 <WhyChooseItem
                     title="24/7 Support"
                     description="Dedicated assistance whenever you need it"
-                    extraClasses="xl:justify-center lg:pt-[300px] xl:pt-[200px] 2xl:pt-[300px]"
+                    extraClasses="xl:justify-center lg:pt-[300px] xl:pt-[200px] 2xl:pt-[150px]"
                 />
             </div>
         </section>
